@@ -30,7 +30,7 @@ JSON snippet data sample:
 
 ## Wireframes
 
-Music-Triva-Mayhem wireframe link: https://wireframe.cc/2B0if4
+Music-Trivia-Mayhem wireframe link: https://wireframe.cc/2B0if4
 
 ### MVP/PostMVP
 
@@ -49,7 +49,7 @@ Music-Triva-Mayhem wireframe link: https://wireframe.cc/2B0if4
 
 - When user is right - alert "You Rock!"
 
-- When user reaches 20 correct answers — alert "You Owned It! You're a F*ckin Rockstar!"
+- After user answers 20 questions — alert "You Owned It! You're a F*ckin Rockstar!" if user answers more than 10 questions correct.  If not, alert "You just don't have what it takes! Try again!"
 
 - Create functional website
 
@@ -93,12 +93,17 @@ Priority Matrix image link:  https://imgur.com/a/lR8FvUD
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| HTML Structure | L | 2hrs |  |  |
-| CSS Layout | M | 8hrs |  |  |
-| Javascript | H | 12hrs |  |  |
-| Working with API | H | 10hrs |  |  |
-| Solidify MVP | M | 8hrs |
-| Total | - | 40hrs|  |  |
+| HTML basic structure | L | 2hrs | | |
+| CSS Styling | M | 8hrs | | |
+| Basic Javascript | H | 8hrs | | |
+| Working with API | H | 10hrs | | |
+| Add clickable buttons | H | 3hrs | | |
+| Add alerts | M | 3hrs | | |
+| Render data to the DOM | H | 5hrs | | |
+| Create dynamic HTML & append | M | 3hrs | | |
+| Fix question string | H | 3hrs | | |
+
+| Total | - | 45hrs|  |  |
 
 ## Code Snippet
 
