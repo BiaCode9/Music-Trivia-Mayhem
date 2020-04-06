@@ -50,7 +50,7 @@ Link to wireframe:  https://wireframe.cc/2B0if4
 
 - When user is right - alert "You Rock!"
 
-- When user reaches 10 correct answers — alert "You Won! You Are a True Muisc Trivia Genius!"
+- When user reaches 20 correct answers — alert "You Owned It! You're a F*ckin Rockstar!"
 
 - Create functional website
 
@@ -70,6 +70,8 @@ Link to wireframe:  https://wireframe.cc/2B0if4
 - Add song list to choose from when website opens
 
 - Add timer
+
+- Add animation
 
 
 ## Project Schedule
