@@ -30,7 +30,7 @@ Here is a JSON snippet data sample:
 
 ## Wireframes
 
-Link to wirefram:  https://wireframe.cc/2B0if4
+Link to wireframe:  https://wireframe.cc/2B0if4
 
 ### MVP/PostMVP
 
