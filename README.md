@@ -3,7 +3,7 @@
 
 ## Project Name
 
-!!! Music Trivia Mayhem !!!
+Music-Trivia-Mayhem
 
 ## Project Description
 
