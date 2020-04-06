@@ -1,8 +1,17 @@
-async function showAvatar(name) {
-  // read github user
-  let githubUser = await axios.get(`https://opentdb.com/api.php?amount=20&category=12&difficulty=medium&type=boolean`);
-
-  console.log(githubUser);
+async function getInfo() {
+  try {
+    const results = await axios.get(`https://opentdb.com/api.php?amount=20&category=12&difficulty=medium&type=boolean`);
+    console.log(results);
+  } catch (error) {
+    console.log(error);
+  }
 }
 
-showAvatar('your-username-here');
+getInfo();
+
+
+
+// NOW ADD DATA TO THE DOM ...
+
+
+
