@@ -103,7 +103,7 @@ Priority Matrix image link:  https://imgur.com/a/lR8FvUD
 | Create dynamic HTML & append | M | 3hrs | | |
 | Fix question string | H | 3hrs | | |
 
-| Total | - | 45hrs|  |  |
+| Total | - | 45hrs| | |
 
 ## Code Snippet
 
@@ -112,5 +112,3 @@ N/A
 ## Change Log
  
 N/A
-
-Adding Read Me!
