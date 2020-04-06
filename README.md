@@ -13,15 +13,15 @@ A music triva website / app that challenges you with interesting and unknown fac
 
 I am using the 'Entertainment: Music' category API in the Open Triva Database.  
 
-Here is the API link: https://opentdb.com/api.php?amount=10&category=12&difficulty=medium&type=boolean  
+Here is the API link: https://opentdb.com/api.php?amount=20&category=12&difficulty=medium&type=boolean  
 
 Here is a JSON snippet data sample:
-       
-         {
+
+          {
             "category": "Entertainment: Music",
             "type": "boolean",
             "difficulty": "medium",
-            "question": "Rapper Snoop Dogg&#039;s real name is &#039;Cordozar Calvin Broadus, Jr.&#039;.",
+            "question": "3 members of 2 Live Crew were arrested for playing songs from their album, As Nasty As They Wanna Be,              live.",
             "correct_answer": "True",
             "incorrect_answers": [
                 "False"
