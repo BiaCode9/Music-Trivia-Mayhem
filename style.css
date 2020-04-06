@@ -59,6 +59,12 @@ section {
         width: 150px;
         }
 
+        .submitButton {
+          display: flex;
+          flex-direction: row;
+
+        }
+
         footer {
           position: fixed;
           left: 0;
