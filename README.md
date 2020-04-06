@@ -30,7 +30,7 @@ JSON snippet data sample:
 
 ## Wireframes
 
-[Music-Triva-Mayhem wireframe]: (https://wireframe.cc/2B0if4)
+Music-Triva-Mayhem wireframe link: https://wireframe.cc/2B0if4
 
 ### MVP/PostMVP
 
