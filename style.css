@@ -1,1 +1,71 @@
 
+section {
+  background-color: #5E5D5C;
+  border: 1px solid black;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+  }
+  
+  div {
+  background-color: #453643;
+  border: 1px solid black;
+  box-sizing: border-box;
+  flex: 1;
+  height: 150px;
+  margin: 10px;
+  width: 150px;
+  transition: all 0.3s;
+  }
+  
+  .big {
+  flex: 3;
+  }
+  
+  div:hover{
+  background-color: #2D2A32;
+  flex: 3;
+  }
+
+  p {
+    background-color: #453643;
+    border: 1px solid black;
+    box-sizing: border-box;
+    flex: 1;
+    height: 150px;
+    margin: 10px;
+    width: 150px;
+    }
+
+    #truebutton {
+      background-color: #788475;
+      border: 1px solid black;
+      box-sizing: border-box;
+      flex: 1;
+      height: 150px;
+      margin: 10px;
+      width: 150px;
+      }
+
+      #falsebutton {
+        background-color: #788475;
+        border: 1px solid black;
+        box-sizing: border-box;
+        flex: 1;
+        height: 150px;
+        margin: 10px;
+        width: 150px;
+        }
+
+        footer {
+          position: fixed;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          background-color: #788475;
+          color: white;
+          text-align: center;
+          }
+        
