@@ -7,7 +7,7 @@
 
 ## Project Description
 
-My website / app will be a true or false music trivia quiz.
+A website / app consisting of a music trivia true or false quiz.
 
 ## API and Data Sample
 
@@ -40,7 +40,7 @@ Upload images of your wireframes to an image hosting site or add them to an asse
 
 - Complete HTML and CSS structure
 
-- Use API in code
+- Use API and code
 
 - Add pictures
 
@@ -53,15 +53,13 @@ Upload images of your wireframes to an image hosting site or add them to an asse
 
 #### PostMVP 
 
+- Player one vs Player Two mode
+
 - Add 'name' Submit Button your “Stage Name” ( crowd screaming noises when clicked)
 
 - Alert “ Let’s `Get it On {$Stage Name}` upon name submission.
 
-- Player one vs Player Two mode
-
 - Certain images expand when hovered over
-
-- Add different music genres 
 
 - Add multiple APIs
 
@@ -80,8 +78,8 @@ You are **responsible** for scheduling time with your squad to seek approval for
 |---|---| ---|
 |April 6th| Project Prompt / HTML structure | 
 |April 7rd| CSS layout  
-|April 8th| Javascript Code
-|April 9th| Add Clickable Buttons 
+|April 8th| Javascript Code / API
+|April 9th| Add Clickable Buttons / API
 |April 10th| MVP | 
 |April 9th| Go over everything / make sure all data rendered and website fully functional | 
 |April 10th| Present | 
