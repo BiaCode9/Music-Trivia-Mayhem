@@ -61,7 +61,7 @@ Link to wireframe:  https://wireframe.cc/2B0if4
 
 - Add 'name' Submit Button your “Stage Name” ( crowd screaming noises when clicked)
 
-- Alert “ Let’s `Get it On {$Stage Name}` upon name submission.
+- Alert -  'Let’s Get it On {$Stage Name}` upon name submission.
 
 - Certain images expand when hovered over
 
