@@ -102,7 +102,6 @@ Priority Matrix image link:  https://imgur.com/a/lR8FvUD
 | Render data to the DOM | H | 5hrs | | |
 | Create dynamic HTML & append | M | 3hrs | | |
 | Fix question string | H | 3hrs | | |
-
 | Total | - | 45hrs| | |
 
 ## Code Snippet
