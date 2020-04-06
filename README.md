@@ -13,9 +13,9 @@ A music triva website / app that challenges you with interesting and unknown fac
 
 'Entertainment: Music' category API in the Open Triva Database.  
 
-Here is the API link: https://opentdb.com/api.php?amount=20&category=12&difficulty=medium&type=boolean  
+API Link: https://opentdb.com/api.php?amount=20&category=12&difficulty=medium&type=boolean  
 
-Here is a JSON snippet data sample:
+JSON snippet data sample:
 
           {
             "category": "Entertainment: Music",
