@@ -30,13 +30,12 @@ JSON snippet data sample:
 
 ## Wireframes
 
-Link to wireframe:  https://wireframe.cc/2B0if4
+[Music-Triva-Mayhem wireframe]: (https://wireframe.cc/2B0if4)
 
 ### MVP/PostMVP
 
 
 #### MVP 
-
 
 - Complete HTML and CSS structure
 
