@@ -7,7 +7,7 @@
 
 ## Project Description
 
-A website / app consisting of a music trivia true or false quiz.
+A music triva website / app that challenges you with interesting and unknown facts about the music industry.
 
 ## API and Data Sample
 
