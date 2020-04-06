@@ -46,7 +46,11 @@ Upload images of your wireframes to an image hosting site or add them to an asse
 
 - Add clickable buttons
 
-- When player reaches 10 correct answers — alert “You've reach Rockstar Status!"
+- When user is wrong - alert "You Suck!"
+
+- When user is right - alert "You Rock!"
+
+- When user reaches 10 correct answers — alert "You Won! You Are a True Muisc Trivia Genius!"
 
 - Create functional website
 
@@ -96,9 +100,12 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| Total | H | 6hrs| 5hrs | 5hrs |
+| HTML Structure | L | 2hrs |  |  |
+| CSS Layout | M | 8hrs |  |  |
+| Javascript | H | 12hrs |  |  |
+| Working with API | H | 10hrs |  |  |
+| Solidify MVP | M | 8hrs |
+| Total | - | 40hrs|  |  |
 
 ## Code Snippet
 
