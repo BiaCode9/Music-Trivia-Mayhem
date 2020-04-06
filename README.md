@@ -15,7 +15,7 @@ I am using the 'Entertainment: Music' category API in the Open Triva Database.
 
 Here is the API link: https://opentdb.com/api.php?amount=10&category=12&difficulty=medium&type=multiple.  
 
-Here is a JSON snippet data sample:
+Here is a JSON snippet data sample: --
        `{
             "category": "Entertainment: Music",
             "type": "multiple",
