@@ -7,26 +7,24 @@
 
 ## Project Description
 
-My website / app will be a music trivia quiz with 10 randly generated multiple choice questions.
+My website / app will be a true or false music trivia quiz.
 
 ## API and Data Sample
 
 I am using the 'Entertainment: Music' category API in the Open Triva Database.  
 
-Here is the API link: https://opentdb.com/api.php?amount=10&category=12&difficulty=medium&type=multiple.  
+Here is the API link: https://opentdb.com/api.php?amount=10&category=12&difficulty=medium&type=boolean  
 
 Here is a JSON snippet data sample:
        
-        {
+         {
             "category": "Entertainment: Music",
-            "type": "multiple",
+            "type": "boolean",
             "difficulty": "medium",
-            "question": "EDM producer Marshmello performs live wearing clothes and a marshmallow mask of what colour?",
-            "correct_answer": "White",
+            "question": "Rapper Snoop Dogg&#039;s real name is &#039;Cordozar Calvin Broadus, Jr.&#039;.",
+            "correct_answer": "True",
             "incorrect_answers": [
-                "Black", 
-                "Blue",
-                "Yellow"
+                "False"
             ]
         }
 
