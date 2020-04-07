@@ -1,47 +1,68 @@
 const question = document.querySelector('#question') //traversing the DOM
+let trueButton = document.querySelector("#true-button");
+let falseButton = document.querySelector("#false-button"); 
+
 
 async function getInfo() {
   try {
     const results = await axios.get(`https://opentdb.com/api.php?amount=20&category=12&difficulty=medium&type=boolean`);
-    console.log(results.data.results);
+    // console.log(results.data.results);
     const response = results.data.results
+    console.log(response)
 
-
-    getInfo();
-
-
-
-    // response.forEach(item => {
-    //   const triviaQuestion = item.question
-    //   console.log(triviaQuestion)
-    //   question.innerHTML = triviaQuestion
-    //   const correctAnswer = item.correct_answer
-    //   console.log(correctAnswer)
-    // })
-
-
-    const triviaQuestion = response[0].question
-    question.innerHTML = triviaQuestion
+    // Append Trivia Question
+    // const triviaQuestion = response[increment].question
+    // question.innerHTML = triviaQuestion
 
     // see if the boolean value are tru compared to each button you are comparing
 
-    // then have an incrementer // then increment to next question 
+    // increment to next question
+    let increment = 0 
+    const correctAnswer = response[increment].correct_answer
+    console.log(correctAnswer)
+    let triviaQuestion = response[increment].question
+    question.innerHTML = triviaQuestion
 
-    const questionNum = 0
+    const checkTrue = () => {
+      const truthy = trueButton.getAttribute('name')
+      if (truthy === correctAnswer) {
+        console.log("You got it right!")
+        increment++
+        console.log(increment)
+      }
+    }
 
+    const checkFalse = () => {
+      const falsy = falseButton.getAttribute('name')
+      if (falsy === correctAnswer) {
+        console.log("You got it wrong!")
+        increment++
+        question.innerHTML = triviaQuestion
+      }
+    }
+
+    trueButton.addEventListener('click', checkTrue)
+    falseButton.addEventListener('click', checkFalse)
+    
   } catch (error) {
     console.log(error);
   }
 }
 
+getInfo();
 
-let button = document.querySelector("button");
-button.addEventListener("click", event => {
-  if (event.button.innerHtml === 'correct_answer') {
-    console.log("You Rock!");
-  } else if (event.button.innerHtml === 'incorrect_answers')
-    console.log("You Suck!");
-}
+
+
+// button.addEventListener("click", () => {
+//   if (event.button.innerHtml === 'correct_answer') {
+//     console.log("You Rock!");
+//   } else if (event.button.innerHtml === 'incorrect_answers') { 
+//     console.log("You Suck!");
+//   }
+   
+// }
+
+
 
   // increment through the array for every question 
   // check to see if the answer is the same for what the button given is giving back === make the comparison with if else 
