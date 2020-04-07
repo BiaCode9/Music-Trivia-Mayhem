@@ -15,11 +15,20 @@ getInfo();
 
 // For each question, user clicks true or false button/block
 
+
 // If answer is 'true', user is alerted 'You Rock!'
+function trueAnswer() {
+  document.getElementById('question').innerHTML = 'YOU ROCK !!!';
+}
 
 // Else, answer is wrong 'false' , user is alerted 'You Suck!'
 
+function falseAnswer() {
+  document.getElementById('question').innerHTML = 'YOU SUCK !!!';
+}
+
 // After 20 questions answered, If user answers more than 10 questions correct, alert user 'You Owned It! You're a F*ckin Rockstar!"
+
 
 //  If not, alert "You just don't have what it takes! Try again!"
 

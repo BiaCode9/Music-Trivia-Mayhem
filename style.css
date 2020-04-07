@@ -48,6 +48,7 @@ section {
 
   h1 {
     background-color: #453643;
+    font-family:  
     border: 6px solid black;
     box-sizing: border-box;
     flex: 1;
@@ -75,7 +76,7 @@ section {
   } 
     
 
-    #truebutton {
+    button {
       background-color: #788475;
       border: 3px solid black;
       box-sizing: border-box;
@@ -89,7 +90,7 @@ section {
       padding: 50px 50px;
       }
 
-      #falsebutton {
+      /* #falsebutton {
         background-color: #788475;
         border: 3px solid black;
         box-sizing: border-box;
@@ -103,7 +104,7 @@ section {
         font-size: 40px;
         padding: 50px 50px;
 
-        }
+        } */
 
       
       img { 
