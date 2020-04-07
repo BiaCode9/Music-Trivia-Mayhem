@@ -6,6 +6,11 @@ async function getInfo() {
     console.log(results.data.results);
     const response = results.data.results
 
+
+    getInfo();
+
+
+
     // response.forEach(item => {
     //   const triviaQuestion = item.question
     //   console.log(triviaQuestion)
@@ -36,6 +41,7 @@ button.addEventListener("click", event => {
     console.log("You Rock!");
   } else if (event.button.innerHtml === 'incorrect_answers')
     console.log("You Suck!");
+}
 
   // increment through the array for every question 
   // check to see if the answer is the same for what the button given is giving back === make the comparison with if else 
@@ -45,55 +51,54 @@ button.addEventListener("click", event => {
 
   // }
 
-  getInfo();
 
-// PSEUDOCODE:
+  // PSEUDOCODE:
 
-// A trivia game where user goes through 20 music trivia questions
+  // A trivia game where user goes through 20 music trivia questions
 
-// For each question, user clicks true or false button/block
-
-
-
-// If answer is 'true', user is alerted 'You Rock!'
-// function trueAnswer() {
-//   document.getElementById('question').innerHTML = 'YOU ROCK !!!';
-// }
-
-// Else, answer is wrong 'false' , user is alerted 'You Suck!'
-
-// function falseAnswer() {
-//   document.getElementById('question').innerHTML = 'YOU SUCK !!!';
-// }
-
-
-//Write a method that receives the array of 'results' objects as a paramter
-
-
-// Call the method
-
-
-// When user clicks true or false button, pass teh answer to the api and fetch the information ?? AKA create a function to append to the DOM/buttons
-
-
-// if/else or switch case for true or false? 
-
-
-// .get request ???
+  // For each question, user clicks true or false button/block
 
 
 
+  // If answer is 'true', user is alerted 'You Rock!'
+  // function trueAnswer() {
+  //   document.getElementById('question').innerHTML = 'YOU ROCK !!!';
+  // }
 
-// After 20 questions answered, If user answers more than 10 questions correct, alert user 'You Owned It! You're a F*ckin Rockstar!"
+  // Else, answer is wrong 'false' , user is alerted 'You Suck!'
+
+  // function falseAnswer() {
+  //   document.getElementById('question').innerHTML = 'YOU SUCK !!!';
+  // }
 
 
-//  If not, alert "You just don't have what it takes! Try again!"
+  //Write a method that receives the array of 'results' objects as a paramter
+
+
+  // Call the method
+
+
+  // When user clicks true or false button, pass teh answer to the api and fetch the information ?? AKA create a function to append to the DOM/buttons
+
+
+  // if/else or switch case for true or false? 
+
+
+  // .get request ???
 
 
 
-// ADD DATA TO THE DOM ? ...
+
+  // After 20 questions answered, If user answers more than 10 questions correct, alert user 'You Owned It! You're a F*ckin Rockstar!"
 
 
-// EVENT LISTENER TAKES PLACE IN THE DOM -- button click
+  //  If not, alert "You just don't have what it takes! Try again!"
 
-// Need autorefresh after question is answered?
+
+
+  // ADD DATA TO THE DOM ? ...
+
+
+  // EVENT LISTENER TAKES PLACE IN THE DOM -- button click
+
+  // Need autorefresh after question is answered?
