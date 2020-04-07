@@ -1,49 +1,70 @@
 const question = document.querySelector('#question') //traversing the DOM
 let trueButton = document.querySelector("#true-button");
-let falseButton = document.querySelector("#false-button"); 
-
+let falseButton = document.querySelector("#false-button");
 
 async function getInfo() {
   try {
+    // API Fetching
     const results = await axios.get(`https://opentdb.com/api.php?amount=20&category=12&difficulty=medium&type=boolean`);
-    // console.log(results.data.results);
-    const response = results.data.results
-    console.log(response)
+    const response = results.data.results;
 
-    // Append Trivia Question
-    // const triviaQuestion = response[increment].question
-    // question.innerHTML = triviaQuestion
+    // Setting Global Variables
+    let currentQuestion = 0; // sets the question at the current question
+    let totalCorrect = 0;
+    let correctAnswer = response[currentQuestion].correct_answer;
 
-    // see if the boolean value are tru compared to each button you are comparing
+    // DOM Manipulation
+    question.innerHTML = response[currentQuestion].question;
 
-    // increment to next question
-    let increment = 0 
-    const correctAnswer = response[increment].correct_answer
-    console.log(correctAnswer)
-    let triviaQuestion = response[increment].question
-    question.innerHTML = triviaQuestion
-
-    const checkTrue = () => {
-      const truthy = trueButton.getAttribute('name')
-      if (truthy === correctAnswer) {
-        console.log("You got it right!")
-        increment++
-        console.log(increment)
-      }
+    const updateQuestion = () => {
+      currentQuestion++;
+      question.innerHTML = response[currentQuestion].question;
+      correctAnswer = response[currentQuestion].correct_answer;
     }
 
-    const checkFalse = () => {
-      const falsy = falseButton.getAttribute('name')
-      if (falsy === correctAnswer) {
-        console.log("You got it wrong!")
-        increment++
-        question.innerHTML = triviaQuestion
+    // Truth Checks
+    const check = (answer) => {
+      if (answer === correctAnswer) {
+        alert("BRILLIANT !!! YOU ROCK !!!");
+        console.log("You got it right!");
+        totalCorrect++;
+      } else {
+        alert("EPIC FAIL !!! YOU SUCK !!!");
+        console.log("You got it wrong!");
       }
+      updateQuestion();
     }
 
-    trueButton.addEventListener('click', checkTrue)
-    falseButton.addEventListener('click', checkFalse)
-    
+    let correctAnswerTotal = correctAnswer ??
+
+    let finalResult = () => {
+      if (correctAnswerTotal > 10) {
+        alert("You Owned It! You're a F*ckin Rockstar!");
+        console.log("You Won!");
+      } else {
+        console.log("You Lose!");
+        alert("You just don't have what it takes! Try again!");
+      }
+    }
+    finalResult();
+
+    // const
+    // if (answer === correctAnswer) {
+
+    // } else {
+
+    // }
+
+
+
+    // Event Listeners - check and pass through to see if right or wrong
+    trueButton.addEventListener('click', function () {
+      check('True');
+    });
+    falseButton.addEventListener('click', function () {
+      check('False');
+    })
+
   } catch (error) {
     console.log(error);
   }
@@ -52,14 +73,13 @@ async function getInfo() {
 getInfo();
 
 
-
 // button.addEventListener("click", () => {
 //   if (event.button.innerHtml === 'correct_answer') {
 //     console.log("You Rock!");
 //   } else if (event.button.innerHtml === 'incorrect_answers') { 
 //     console.log("You Suck!");
 //   }
-   
+
 // }
 
 
