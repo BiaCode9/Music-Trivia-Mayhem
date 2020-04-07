@@ -1,4 +1,10 @@
 
+main {
+  background-color: #8DAA91;
+}
+
+
+
 section {
   background-color: #5E5D5C;
   border: 1px solid black;
@@ -11,59 +17,85 @@ section {
   
   div {
   background-color: #453643;
-  border: 1px solid black;
+  border: 6px solid black;
   box-sizing: border-box;
+  border-radius: 15px;
   flex: 1;
-  height: 150px;
+  height: 300px;
   margin: 10px;
   width: 150px;
-  transition: all 0.3s;
+  transition:  0.6s;
   }
   
   .big {
-  flex: 3;
+  flex: 1;
+  
   }
   
   div:hover{
-  background-color: #2D2A32;
-  flex: 3;
-  }
+  /* box-shadow: 0 0 0 10px #000000; */
+  transition-duration: 5;
+  /* flex: 3; */
+  -moz-transform: rotate(6deg);
+	-webkit-transform: rotate(6deg);
+	-o-transform: rotate(6deg);
+	-ms-transform: rotate(6deg);
+	transform: rotate(6deg);
+}
 
-  p {
+
+  
+
+  h1 {
     background-color: #453643;
-    border: 1px solid black;
+    border: 6px solid black;
     box-sizing: border-box;
     flex: 1;
     height: 150px;
-    margin: 10px;
-    width: 150px;
+    margin: 60px;
+    width: 1000px;
+    font-size: 50px;
+    text-align: center;
+    border-radius: 15px 50px;
+    padding: 40px 50px;
+    
+  
+    
     }
 
     #truebutton {
       background-color: #788475;
-      border: 1px solid black;
+      border: 3px solid black;
       box-sizing: border-box;
-      flex: 1;
+      flex: 3;
       height: 150px;
       margin: 10px;
-      width: 150px;
+      width: 300px;
+      border-radius:50%;
+      text-align: center;
+      font-size: 40px;
+      padding: 50px 50px;
       }
 
       #falsebutton {
         background-color: #788475;
-        border: 1px solid black;
+        border: 3px solid black;
         box-sizing: border-box;
-        flex: 1;
+        flex: 3;
         height: 150px;
         margin: 10px;
-        width: 150px;
+        width: 300px;
+        border-radius:50%;
+        transition: 1s ease;
+        text-align: center;
+        font-size: 40px;
+        padding: 50px 50px;
         }
 
-        .submitButton {
-          display: flex;
-          flex-direction: row;
+        
+          
 
-        }
+        
 
         footer {
           position: fixed;
