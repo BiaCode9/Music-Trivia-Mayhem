@@ -16,7 +16,7 @@ section {
   background-color: #5E5D5C;
   border: 1px solid black;
   box-sizing: border-box;
- 
+  display: flex;
   
   }
   
