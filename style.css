@@ -1,19 +1,14 @@
 body {
-  background-color: #453643;
-  /* max-width: 100%;
-  max-height: 100%; 
-  object-fit: cover; */
+  background-color: #453643
+  
 }
 
+  article {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  }
 
-
-
-/* main {
-  background-color: #8DAA91;
-  max-width: 100%;
-  max-height: 100%; 
-  object-fit: cover;
-} */
 
 
 
@@ -21,14 +16,9 @@ section {
   background-color: #5E5D5C;
   border: 1px solid black;
   box-sizing: border-box;
-  display: flex;
  
   
   }
-
-  /* .top-images {
-    object-fit: fill;
-  } */
   
   div {
   background-color: #453643;
@@ -118,6 +108,7 @@ section {
       .button-holder {
         margin: 0 auto;
         width: 500px;
+        
       }
 
 
