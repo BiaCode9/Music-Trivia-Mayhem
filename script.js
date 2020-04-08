@@ -42,11 +42,11 @@ async function getInfo() {
 
     let finalResult = () => {
       if (totalCorrect >= 10) {
-        alert(`You Owned It! You're a F*ckin Rockstar! You got ${totalCorrect}!`);
+        alert(`YOU OWNED IT! YOU'RE A F*CKIN' ROCKSTART! You got ${totalCorrect}/20 Correct !!! `);
         console.log("You Won!");
       } else {
         console.log("You Lose!");
-        alert(`You just don't have what it takes! Try again! You got ${totalCorrect}!`);
+        alert(`YOU JUST DON'T HAVE WHAT IT TAKES! TRY AGAIN! You got ${totalCorrect}/20 correct!`);
       }
     }
 
