@@ -18,8 +18,12 @@ async function getInfo() {
 
     const updateQuestion = () => {
       currentQuestion++;
-      question.innerHTML = response[currentQuestion].question;
-      correctAnswer = response[currentQuestion].correct_answer;
+      if (currentQuestion < 20) {
+        question.innerHTML = response[currentQuestion].question;
+        correctAnswer = response[currentQuestion].correct_answer;
+      } else {
+        finalResult();
+      }
     }
 
     // Truth Checks
@@ -35,18 +39,17 @@ async function getInfo() {
       updateQuestion();
     }
 
-    let correctAnswerTotal = correctAnswer ??
 
     let finalResult = () => {
-      if (correctAnswerTotal > 10) {
-        alert("You Owned It! You're a F*ckin Rockstar!");
+      if (totalCorrect >= 10) {
+        alert(`You Owned It! You're a F*ckin Rockstar! You got ${totalCorrect}!`);
         console.log("You Won!");
       } else {
         console.log("You Lose!");
-        alert("You just don't have what it takes! Try again!");
+        alert(`You just don't have what it takes! Try again! You got ${totalCorrect}!`);
       }
     }
-    finalResult();
+
 
     // const
     // if (answer === correctAnswer) {
