@@ -26,7 +26,7 @@ async function getInfo() {
       }
     }
 
-    // Truth Checks
+    // Truth Checks if answer is right or wrong
     const check = (answer) => {
       if (answer === correctAnswer) {
         alert("BRILLIANT !!! YOU ROCK !!!");
@@ -51,7 +51,7 @@ async function getInfo() {
     }
 
 
-    // Event Listeners - check and pass through to see if right or wrong
+    // Event Listeners - check and pass through to see if answer is right or wrong
     trueButton.addEventListener('click', function () {
       check('True');
     });
@@ -64,6 +64,6 @@ async function getInfo() {
   }
 }
 
-getInfo();
+getInfo(); // call function to pull from the DOM
 
 
