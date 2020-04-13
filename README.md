@@ -5,6 +5,8 @@
 
 Music-Trivia-Mayhem
 
+[LINK TO MY SITE](https://pages.git.generalassemb.ly/BiaCode2020/Music-Trivia-Mayhem/)
+
 ## Project Description
 
 A music triva website / app that challenges you with interesting and unknown facts about the music industry.
